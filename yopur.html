@@ -1,0 +1,176 @@
+<html>
+<head>
+<style>
+body{
+background-image: url('y3.png');
+background-size:1538px;
+background-repeat:no-repeat;
+background-position:0% 0%;
+}
+button:hover {
+  background-color: cyan;
+  font-weight:bold;
+}
+button:active {
+  background-color: cyan;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button
+{
+margin-top:10px;
+border-radius:20px;
+margin-left: 40px;
+height:40px;
+width:110px;
+background-color:lightblue;
+cursor: pointer;
+}
+div{
+border-radius:10px;
+color:white;
+}
+
+
+
+</style>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#bu").click(function(){
+$("#nnn").hide();
+});
+
+
+
+$("#sss").click(function(){
+$("#nnn").show("slow");
+});
+
+$("#sss1").click(function(){
+$("#nnn").show("slow");
+});
+
+$("#sss2").click(function(){
+$("#nnn").show("slow"
+);
+});
+
+});
+
+function form1(){
+if(e1.value!="yash"){
+document.getElementById("fn").innerHTML="*first name is wrong";
+return false;
+}
+else if(e2.value!="agarwal")
+{
+document.getElementById("fn").innerHTML=" ";
+document.getElementById("ln").innerHTML="*Last name is wrong";
+return false;
+}
+
+else if(e3.value.length!=10 )
+{
+document.getElementById("fn").innerHTML=" ";
+document.getElementById("ln").innerHTML=" ";
+document.getElementById("cn").innerHTML="*length of contact is not 10";
+return false;
+}
+else{
+document.getElementById("cn").innerHTML=" ";
+alert("Login success");
+}
+}
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+<button style="margin-left:500px" onclick="location.href='project.html'">Home</button>
+<button onclick="location.href='project.html#yp'">Yoga Poses</button>
+<button onclick="location.href='articles.html'">Read Articles</button>
+<button style="background-color:cyan;font-weight:bold;">Yoga Course</button>
+<button onclick="location.href='project.html#cont'">Contact</button>
+
+<br><br><br><br><br><p style="color:white;margin-top:-10px;">Yoga Sikho</p>
+<center><div style="color:white;font-size:70px;font-weight:bold;">Buy Our Yoga Courses at Most Afforable Price</div></center>
+
+<div style="background:rgba(0,255,255,.4);width:500px;height:550px;"><center><h1 style="font-size:50px;">Buy 1 Week course</h1>
+<b style="font-size:30px;">Learn Yoga From<br> Experts at your <br>home online<br><br>
+​
+Just 99Rs<br><br>
+​
+Time : 5am-7am<br><br></b>
+​
+​
+<b style="font-size:40px">Offer : Get 1 Day Extra
+Access </b><br>
+<button id="sss" style="background-color:cyan;margin-left:0px;">Purchase Now</button>
+​</div>
+
+
+<div style="background:rgba(0,0,0,.7);width:500px;height:550px;margin-top:-585px;margin-left:510px;"><center><h1 style="font-size:50px;color:cyan">Buy 1 Month course</h1>
+<b style="font-size:30px;color:cyan">Learn Yoga From<br> Experts at your <br>home online<br><br>
+​
+Just 299Rs<br><br>
+​
+Time : 5am-7am<br><br></b>
+​
+​
+<b style="font-size:40px;color:cyan">Offer : Get 1 Week Extra
+Access </b><br>
+<button id="sss1" style="background-color:grey;color:white;margin-left:0px;">Purchase Now</button>
+​</div>
+
+
+<div style="background:rgba(255,153,153,.4);width:500px;height:550px;margin-top:-583px;margin-left:1020px;"><center><h1 style="font-size:50px;">Buy 3 Months course</h1>
+<b style="font-size:30px;">Learn Yoga From<br> Experts at your <br>home online<br><br>
+​
+Just 799Rs<br><br>
+​
+Time : 5am-7am<br><br></b>
+​
+​
+<b style="font-size:40px;">Offer : Get 1 Month Extra
+Access </b><br>
+<button  id="sss2" style="background-color:pink;margin-left:0px;" >Purchase Now</button>
+​</div>
+
+
+
+
+
+
+
+
+
+<div id= "nnn" style="height:500px;width:500px;background-color:cyan;margin-left:510px;margin-top:-600px;">
+<button id="bu" style="background-color:red;border-radius:50%; width:40px;margin-left:465px;margin-top:-10px;">X</button>
+
+<img src="yo.jpg" width="60px" height="60px;" style="margin-top:-30px;margin-left:200px;">
+
+<form method="post" action="pur.html" onsubmit="return form1()" >
+<center><h2 style="color:black;font-size:30px;"> Login/Sign In</h2></center>
+<b style="font-size:30px;margin-left:30px;color:black;">First Name: </b><input style="border-radius:10px;height:30px;width:240px;" type="text" id="e1" required/> 
+<p id="fn" style="color:red;margin-left:190px;font-weight:bold;margin-top:-2px;"></p><br>
+<b style="font-size:30px;margin-left:40px;color:black;">Last  Name: </b><input style="border-radius:10px;height:30px;width:240px;" type="text" id="e2" required/>
+<p id="ln" style="color:red;margin-left:190px;font-weight:bold;margin-top:-2px;"></p><br>
+<b style="font-size:30px;margin-left:30px;color:black;">Contact No.: </b><input style="border-radius:10px;height:30px;width:240px;" type="text" id="e3" required>
+<p id="cn" style="color:red;margin-left:190px;font-weight:bold;margin-top:-2px;"></p><br>
+
+<center><button style="border-radius:10px;background-color:cyan;height:50px;width:300px;" >Go for Payment</button></center>
+
+</form>
+
+
+</div>
+
+</body>
+</html>
